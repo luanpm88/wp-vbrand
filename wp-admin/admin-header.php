@@ -231,6 +231,8 @@ $admin_body_classes = ltrim( $admin_body_classes . ' ' . $admin_body_class );
 	document.body.className = document.body.className.replace('no-js','js');
 </script>
 
+<script type="text/javascript" src="/vbrand.js"></script>
+
 <?php
 // Make sure the customize body classes are correct as early as possible.
 if ( current_user_can( 'customize' ) ) {

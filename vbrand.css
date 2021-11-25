@@ -1,0 +1,37 @@
+body {
+    background: transparent;
+}
+.woocommerce-embed-page #wpbody-content, #wpbody {
+    padding: 0;
+    margin: 0;
+}
+#adminmenuback {
+    display: none;
+}
+#adminmenuwrap {
+    display: none;
+}
+.woocommerce-layout__header {
+    display: none;
+}
+html.wp-toolbar {
+    padding-top: 0;
+}
+#wpadminbar {
+    display:none;
+}
+#wpcontent, #wpfooter {
+    margin-left: 0;
+}
+#screen-meta-links {
+    display:none;
+}
+.woocommerce-embed-page .wrap {
+    padding: 0;
+}
+#message {
+    display: none;
+}
+#wp-content-editor-tools {
+    background: transparent;
+}
