@@ -1,4 +1,4 @@
-var AcelleHelper = {
+var vBrand = {
     loadCss: function(url) {
         if (this.css == null) {
             var head  = document.getElementsByTagName('head')[0];
@@ -51,10 +51,10 @@ var AcelleHelper = {
 
 if (parent.length) {
     // include vband.css
-    AcelleHelper.loadCss('/vbrand.css');
+    vBrand.loadCss('/vbrand/vbrand.css');
 
     // auto height
     setInterval(() => {
-        AcelleHelper.autoHeight();
+        vBrand.autoHeight();
     }, 500);
 }
