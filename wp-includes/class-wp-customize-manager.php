@@ -1951,8 +1951,8 @@ final class WP_Customize_Manager {
 	 * @return array Headers.
 	 */
 	public function filter_iframe_security_headers( $headers ) {
-		$headers['X-Frame-Options']         = 'SAMEORIGIN';
-		$headers['Content-Security-Policy'] = "frame-ancestors 'self'";
+		// $headers['X-Frame-Options']         = 'SAMEORIGIN';
+		// $headers['Content-Security-Policy'] = "frame-ancestors 'self'";
 		return $headers;
 	}
 

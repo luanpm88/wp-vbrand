@@ -6710,6 +6710,7 @@ function wp_find_hierarchy_loop_tortoise_hare( $callback, $start, $override = ar
  */
 function send_frame_options_header() {
 	// header( 'X-Frame-Options: SAMEORIGIN' );
+	// header( "Content-Security-Policy: frame-ancestors *" );
 }
 
 /**
