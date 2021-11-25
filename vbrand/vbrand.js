@@ -58,3 +58,13 @@ if (parent.length) {
         vBrand.autoHeight();
     }, 500);
 }
+
+// message from parent
+window.addEventListener("message", (event) => {
+    dark_mode = event.data.dark_mode;
+
+    if (dark_mode) {
+        var element = document.getElementsByTagName("body")[0];
+        element.classList.add("mode-dark");
+    }
+});
