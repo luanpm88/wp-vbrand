@@ -113,5 +113,6 @@ if (!is_user_logged_in()) {
 		'remember'      => true
 	);
 	$user = wp_signon( $creds, false );
+	header("Refresh:0");
 }
 	
