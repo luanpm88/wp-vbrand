@@ -106,9 +106,12 @@ if ( file_exists( ABSPATH . 'wp-config.php' ) ) {
 }
 
 // WP auto login
-$creds = array(
-	'user_login'    => 'luan',
-	'user_password' => '123456',
-	'remember'      => true
-);
-$user = wp_signon( $creds, false );
+if (!is_user_logged_in()) {
+	$creds = array(
+		'user_login'    => 'luan',
+		'user_password' => '123456',
+		'remember'      => true
+	);
+	$user = wp_signon( $creds, false );
+}
+	
